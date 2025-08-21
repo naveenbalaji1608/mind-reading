@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <title>Mind Reading</title>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <img src="https://cdn.dribbble.com/userupload/20031735/file/original-c306aec134b1c397271ad34be9d64e08.gif" alt="">
+    </div>
+    <div class="main-container" id="main-container">
+        <div class="steps-container border p-2 w-50">
+            <div class="steps" id="steps">
+                <div class="text-center fw-bold" id="step-count"></div><br>
+                <div class="step text-center" data-step="1">
+                  Please Think One Number Between <b>1-25</b>
+                </div>
+                <div class="step text-center" data-step="2">
+                    If you want to change the number can you please change
+                </div>
+                <div class="step text-center" data-step="3">
+                    Please click <b>"Yes"</b> if your number appears below else click <b>"No"</b><br><br>
+                </div>
+                <div class="step text-center" data-step="4">
+                    Please click <b>"Yes"</b> if your number appears below else click <b>"No"</b><br><br>
+                </div>
+                <div class="step text-center" data-step="5">
+                    Please click <b>"Yes"</b> if your number appears below else click <b>"No"</b><br><br>
+                </div>
+                <div class="step text-center" data-step="6">
+                    Please click <b>"Yes"</b> if your number appears below else click <b>"No"</b><br><br>
+                </div>
+                <div class="step text-center" data-step="7">
+                    Please click <b>"Yes"</b> if your number appears below else click <b>"No"</b><br><br>
+                </div>
+                <div class="step text-center" data-step="8">
+                  Your Number is :&nbsp;<b><span id="guessed-number"></span></b>
+                </div>
+            </div>
+            <button class="btn btn-sm btn-primary d-block next-btn mx-auto my-3" id="next-btn" onclick="eachCheck()">Next</button>
+            <div class="d-flex justify-content-center" id="yes-no-btn">
+                <button class="btn btn-sm btn-success yes-no-btn mx-2 mt-4 mb-3" onclick="yes_no_Check('yes')">Yes</button>
+                <button class="btn btn-sm btn-danger yes-no-btn mx-2 mt-4 mb-3" onclick="yes_no_Check('No')">No</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+     <script src="./script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
